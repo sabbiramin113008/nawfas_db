@@ -1,0 +1,12 @@
+/.idea/
+/__pycache__/
+__pycache__
+__pycache__/
+.virtualenvironment
+.virtualenvironment/
+*.pyc
+/info
+/venv
+/nawfas_db.egg-info
+/build
+/dist
