@@ -10,7 +10,7 @@ email: sabbir@rokomari.com, sabbiramin.cse11ruet@gmail.com
 
 from nawfas_db import Database
 
-base_dir_loc = "F:\\projektus\\py\\nawfas_db\\test\\database"
+base_dir_loc = "F:\\projektus\\py\\nawfas_db\\examples\\database"
 
 #Sample Docs
 docs = ["users", "payment"]
