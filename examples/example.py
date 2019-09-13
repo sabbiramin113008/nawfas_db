@@ -27,10 +27,10 @@ payment = {
     "subcription": 1
 }
 
-db.insert("payment", payment)
+db.insert(doc_name="payment", val=payment)
 for i in range(10):
     try:
-        db.insert("users", user, key="second")
+        db.insert(doc_name="users", val=user, key="second")
     except:
         db.update("users",user,key="second")
         pass

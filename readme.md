@@ -53,7 +53,7 @@ user = {
     "category":"Self Motivation"
 }
 payment = {
-    "user": "sample@data",
+    "user": "sample_user_id",
     "subcription": 1
 }
 ```
@@ -61,16 +61,19 @@ payment = {
 Now Insert into the docs
 ```python
 #insert a Payment type Doc
-db.insert("payment", payment)
+db.insert(doc_name="payment", val=payment)
 ```
 Again 
 ```python
 #Insert a User Type Doc
 for i in range(10):
     try:
-        db.insert("users", user, key="second")
+        db.insert(doc_name="users", val=user, key="second")
     except:
         db.update("users",user,key="second")
         pass
 ```
+For insert operation "key" is not mandatory as uuid is used, 
+but for the key. For the update operation, a key must be provided. 
 
+It should work on Linux or MacOS too. But I didn't get time to test it, honestly.
