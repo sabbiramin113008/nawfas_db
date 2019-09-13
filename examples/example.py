@@ -16,7 +16,6 @@ base_dir_loc = "F:\\projektus\\py\\nawfas_db\\examples\\database"
 docs = ["users", "payment"]
 
 db = Database(base_dir_loc=base_dir_loc, docs=docs)
-# db.init()
 
 user = {
     "name": "The Power of Habit",
