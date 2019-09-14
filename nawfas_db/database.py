@@ -89,6 +89,9 @@ class Database:
         else:
             return content[key]
 
+    def get_all(self, doc_name):
+        return self._load_doc(doc_name)
+
     def delete(self, doc_name, key):
         content = self._load_doc(doc_name)
         if key not in content.keys():
