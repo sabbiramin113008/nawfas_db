@@ -82,6 +82,13 @@ class Database:
             content[key] = val
             self._dump_doc(content, doc_name)
 
+    def get(self, doc_name, key):
+        content = self._load_doc(doc_name)
+        if key not in content.keys():
+            raise Exception("No key Found")
+        else:
+            return content[key]
+
     def delete(self, doc_name, key):
         content = self._load_doc(doc_name)
         if key not in content.keys():

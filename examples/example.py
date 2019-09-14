@@ -6,13 +6,11 @@ email: sabbir@rokomari.com, sabbiramin.cse11ruet@gmail.com
 
 """
 
-
-
 from nawfas_db import Database
 
 base_dir_loc = "F:\\projektus\\py\\nawfas_db\\examples\\database"
 
-#Sample Docs
+# Sample Docs
 docs = ["users", "payment"]
 
 db = Database(base_dir_loc=base_dir_loc, docs=docs)
@@ -20,7 +18,7 @@ db = Database(base_dir_loc=base_dir_loc, docs=docs)
 user = {
     "name": "The Power of Habit",
     "author": "Charles Duhigg",
-    "category":"Self Motivation"
+    "category": "Self Motivation"
 }
 payment = {
     "user": "sample@data",
@@ -32,5 +30,6 @@ for i in range(10):
     try:
         db.insert(doc_name="users", val=user, key="second")
     except:
-        db.update("users",user,key="second")
+        db.update("users", user, key="second")
         pass
+print(db.get(doc_name="users", key="first"))
