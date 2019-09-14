@@ -73,7 +73,12 @@ for i in range(10):
         db.update("users",user,key="second")
         pass
 ```
+Also for getting a Record, 
+```python
+print(db.get(doc_name="users", key="first"))
+
+```
 For insert operation "key" is not mandatory as uuid is used, 
-but for the key. For the update operation, a key must be provided. 
+but for the key. For the update and Get operation, a key must be provided. 
 
 It should work on Linux or MacOS too. But I didn't get time to test it, honestly.
