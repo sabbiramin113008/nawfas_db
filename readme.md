@@ -82,7 +82,7 @@ print(db.get(doc_name="users", key="first"))
 But for all records
 ```python
 print (db.get_all(doc_name="users"))
-
+```
 For insert operation "key" is not mandatory as uuid is used, 
 but for the key. For the update and Get operation, a key must be provided. 
 
