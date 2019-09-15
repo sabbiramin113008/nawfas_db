@@ -20,6 +20,14 @@ Go to the project root directory and type
 ```python
 python setup.py install
 ```
+#### Or You can simply use pip
+
+``` python
+pip install git+https://github.com/sabbiramin113008/nawfas_db.git
+```
+
+
+
 The package should be installed on your system.
 
 ### How to Use
