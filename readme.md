@@ -24,9 +24,8 @@ python setup.py install
 
 ``` python
 pip install git+https://github.com/sabbiramin113008/nawfas_db.git
+
 ```
-
-
 
 The package should be installed on your system.
 
